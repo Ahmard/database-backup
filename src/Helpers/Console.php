@@ -23,6 +23,8 @@ class Console
         /**@phpstan-ignore-next-line* */
         $namespace = $lastSegment['file'] ?? $stackTrace[2]['file'];
         $namespace = explode(self::$baseDirectory, $namespace)[1];
+        $expNs = explode('src' . DIRECTORY_SEPARATOR, $namespace);
+        $namespace = count($expNs) > 1 ? $expNs[1] : $expNs[0];
         return sprintf('[%s] ', $namespace);
     }
 
