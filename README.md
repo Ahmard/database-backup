@@ -1,6 +1,6 @@
 # Database Backup
 
-Handles database backup after certain periodic timer
+Takes database backup after certain interval
 
 ## Installation
 
