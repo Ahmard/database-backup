@@ -79,7 +79,7 @@ $receivers = [
 
 $smtp = new SmtpCredential(
     host: 'localhost',
-    port: 8025,[Helpers](src%2FHelpers)
+    port: 8025,
     username: 'noreply@example.com',
     password: 'Password',
     auth: false
